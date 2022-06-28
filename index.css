@@ -1,0 +1,218 @@
+:root{
+    --azul-marinho: #003366;
+    --azul-celeste: #1398be;
+    --laranja: #DE9800;
+    --cinza: #CCCCCC;
+    --vermelho: #C91B04;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #061302;
+    background-image: url("https://www.transparenttextures.com/patterns/pool-table.png");
+}
+
+/* TITULOS */
+.titulos{
+    margin-bottom: 30px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    color:#e6e6e6;
+}
+
+.titulos .titulo {
+    font-size: 30px;
+    text-shadow: 0px 0px 10px #a1a3a2;
+}
+
+.titulos .sub_titulo {
+    font-size: 12px;
+}
+
+
+/* TABELA */
+
+.tabela {
+    min-width: 600px;
+    background-color: #ffffff;
+}
+
+.tabela_de_jogos {
+    width: 100%;
+    border: 1px solid #DDDDDD;
+}
+
+.tabela_de_jogos .titulos_colunas th{
+    padding: 5px 9px 5px 9px;
+    box-sizing: border-box;
+    
+    font-size: 13px;
+    color: #999999;
+    font-weight: bold;
+    text-align: center;
+
+    width: 30px;
+}
+
+.tabela_de_jogos .colunas th:nth-child(n+2):nth-child(odd){
+    background-color: #F7F7F7;
+}
+
+.tabela_de_jogos .colunas {
+    border: 1px solid #DDDDDD;
+}
+
+.tabela_de_jogos .colunas:hover{
+    background-color: #F7F7F7;
+}
+
+.tabela_de_jogos .colunas th{
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.tabela_de_jogos .colunas:nth-child(5) {
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.tabela_de_jogos .colunas:nth-child(17) {
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.tabela_de_jogos .classificacoes {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabela_de_jogos .colunas .classificacoes {
+    color: var(--azul-marinho);
+}
+
+.tabela_de_jogos .colunas:nth-child(5) .classificacoes {
+    color: var(--azul-celeste);
+}
+
+.tabela_de_jogos .colunas:nth-child(n+6) .classificacoes {
+    color: var(--laranja);
+}
+
+.tabela_de_jogos .colunas:nth-child(n+14) .classificacoes {
+    color: var(--cinza);
+}
+
+.tabela_de_jogos .colunas:nth-child(n+18) .classificacoes {
+    color: var(--vermelho);
+}
+
+.tabela_de_jogos .nome_times {
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    text-align: start;
+
+}
+
+.tabela_de_jogos .pontos {
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabela_de_jogos .colunas_gerais {
+    font-size: 14px;
+    color: #666666;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* LEGENDA TABELA */
+
+.legenda_tabela{
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+}
+
+.legenda_tabela .classificacoes {
+    font-size: 10px;
+    color: #8F8F8F;
+    text-align: start;
+
+    display: flex;
+}
+
+.legenda_tabela .classificacoes .classificacao {
+    margin-right: 6px;
+
+    display: flex;
+    align-items: center;
+}
+
+.bloco {
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.bloco__azul_marinho {
+    background-color: var(--azul-marinho);
+    box-shadow: 0px 0px 2px var(--azul-marinho);
+}
+
+.bloco__azul_celeste {
+    background-color: var(--azul-celeste);
+    box-shadow: 0px 0px 2px var(--azul-celeste);
+}
+
+.bloco__laranja {
+    background-color: var(--laranja);
+    box-shadow: 0px 0px 2px var(--laranja);
+}
+
+.bloco__cinza {
+    background-color: var(--cinza);
+    box-shadow: 0px 0px 2px var(--cinza);
+}
+
+.bloco__vermelho {
+    background-color: var(--vermelho);
+    box-shadow: 0px 0px 2px var(--vermelho);
+}
+
+.legenda_tabela .siglas {
+    font-size: 10px;
+    color: #555555;
+    text-align: start;
+
+    display: flex;
+}
+
+.legenda_tabela .siglas .conjunto {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.legenda_tabela .siglas .conjunto .sigla {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.legenda_tabela .siglas .conjunto .significado {
+    display: flex;
+    flex-wrap: nowrap;
+}
