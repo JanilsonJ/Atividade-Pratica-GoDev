@@ -3,4 +3,4 @@
 
 Página hospedada pela Netlify.
 
-Link para acesso: https://app.netlify.com/sites/camp-acme/overview
+Link para acesso: https://camp-acme.netlify.app/
