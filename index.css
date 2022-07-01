@@ -64,7 +64,11 @@ body {
     font-weight: bold;
     text-align: center;
 
-    width: 30px;
+    width: 40px;
+}
+
+.tabela_de_jogos .titulos_colunas .tamanho_unset{
+    width: unset;
 }
 
 .tabela_de_jogos .colunas th:nth-child(n+2):nth-child(odd){
